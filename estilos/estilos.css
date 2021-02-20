@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+    background: rgb(243, 243, 241);
+
+}
+.header {
+    background: white;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.header-items h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    background:skyblue;
+    display: block;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.banner h3 {
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+.banner p {
+    margin-top: -10px;
+    font-size: 12px;
+    color:white;
+}
+.title {
+    margin-top: 40px;
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.list-courses {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    column-gap: 2em;
+}
+
+.courses-data {
+    padding: 1em; 
+    background: white;  
+}
+.list-courses article {
+    border: 1px solid rgb(231, 224, 224);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.courses-price {
+    display: flex;
+    justify-content: space-between;
+}
+.courses-price p:nth-child(1){
+    text-decoration:line-through;
+}
+
+.list-courses .agregarcarrito {
+    border: none;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.2em;
+    height: 50px;
+    width: 100%;
+    background: rgb(128, 196, 223);
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+.mostrar-carrito {
+    
+}
+.mostrar-cursos {
+    display: none;
+}
+
+.mostrar-carrito:hover .mostrar-cursos{
+    display: block;
+}
